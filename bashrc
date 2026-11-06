@@ -1,5 +1,5 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
-# Shared across machines (obscure, msit). Machine-specific tweaks go in ~/.bashrc.local
+# Shared across machines. Machine-specific tweaks go in ~/.bashrc.local
 
 # If not running interactively, don't do anything
 case $- in

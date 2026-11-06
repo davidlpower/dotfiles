@@ -31,6 +31,20 @@ sudo apt-get install -y \
   fzf bat fd-find bind9-dnsutils
 
 # ---------------------------------------------------------------------------
+log "bat / fd command names (Debian/Ubuntu ship them as batcat / fdfind)"
+mkdir -p "$HOME/.local/bin"
+for pair in bat:batcat fd:fdfind; do
+  want="${pair%%:*}"
+  real="${pair##*:}"
+  if have "$want"; then
+    echo "$want already available"
+  elif have "$real"; then
+    ln -s "$(command -v "$real")" "$HOME/.local/bin/$want"
+    echo "linked ~/.local/bin/$want -> $(command -v "$real")"
+  fi
+done
+
+# ---------------------------------------------------------------------------
 log "uv"
 if have uv; then
   echo "uv already installed: $(uv --version)  (update with: uv self update)"

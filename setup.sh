@@ -59,7 +59,7 @@ uv python install 3.10 3.14 3.15
 
 # ---------------------------------------------------------------------------
 log "uv tools"
-for tool in ipython ruff; do
+for tool in ipython; do
   uv tool install "$tool"
 done
 

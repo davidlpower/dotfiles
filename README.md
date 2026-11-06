@@ -30,7 +30,7 @@ Then open a new terminal. Run `claude` once to sign in.
 - **`bat` / `fd` commands:** symlinks in `~/.local/bin` pointing at `batcat` / `fdfind`, so I can type `bat` and `fd`
 - **uv**, if missing (standalone installer, PATH handled by `bashrc`)
 - **Pythons via uv:** 3.10, 3.14, 3.15
-- **uv tools:** `ipython`, `ruff`
+- **uv tools:** `ipython`
 - **Claude Code CLI** (native installer, auto-updates itself)
 - **`~/.bashrc`**, replaced with `bashrc` from this repo (old one backed up as `~/.bashrc.bak.<timestamp>`)
 
